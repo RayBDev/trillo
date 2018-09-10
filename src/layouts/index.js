@@ -24,7 +24,7 @@ const Layout = ({ children, data }) => (
       <Header />
       <div className="content">
         <Navigation />
-        <main className="hotel-view">{children()}</main>
+        <main>{children()}</main>
       </div>
     </div>
   </Aux>
