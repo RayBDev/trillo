@@ -3,9 +3,7 @@ import React from 'react'
 import logo from '../../assets/img/logo.png'
 import user from '../../assets/img/user.jpg'
 
-import IconMagnifyingGlass from '../../assets/icons/SVG/magnifying-glass.svg'
-import IconBookmark from '../../assets/icons/SVG/bookmark.svg'
-import IconChat from '../../assets/icons/SVG/chat.svg'
+import Icon from '../../components/UI/Icon/Icon'
 
 const Header = () => (
   <header className="header">
@@ -17,16 +15,16 @@ const Header = () => (
         placeholder="Search hotels"
       />
       <button className="search__button">
-        <IconMagnifyingGlass className="search__icon" />
+        <Icon clName="search__icon" icName="magnifying-glass" />
       </button>
     </form>
     <nav className="user-nav">
       <div className="user-nav__icon-box">
-        <IconBookmark className="user-nav__icon" />
+        <Icon clName="user-nav__icon" icName="bookmark" />
         <span className="user-nav__notification">7</span>
       </div>
       <div className="user-nav__icon-box">
-        <IconChat className="user-nav__icon" />
+        <Icon clName="user-nav__icon" icName="chat" />
         <span className="user-nav__notification">13</span>
       </div>
       <div className="user-nav__user">

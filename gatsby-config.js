@@ -7,11 +7,6 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-next`,
-    {
-      resolve: 'gatsby-plugin-react-svg',
-      options: {
-        include: /assets/,
-      },
-    },
+    'gatsby-plugin-svg-sprite',
   ],
 }
