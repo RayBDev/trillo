@@ -9,4 +9,5 @@ module.exports = {
     `gatsby-plugin-react-next`,
     'gatsby-plugin-svg-sprite',
   ],
+  pathPrefix: `/trillo`,
 }
