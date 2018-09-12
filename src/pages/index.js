@@ -2,8 +2,9 @@ import React from 'react'
 
 import FeatureList from '../components/FeatureList/FeatureList'
 import Review from '../components/Review/Review'
+import CTA from '../components/CTA/CTA'
 
-import StarIcon from '../components/UI/Icon/Icon'
+import Icon from '../components/UI/Icon/Icon'
 import Button from '../components/UI/Button/Button'
 
 import hotel1 from '../assets/img/hotel-1.jpg'
@@ -79,16 +80,16 @@ const IndexPage = () => (
     <div className="overview">
       <h1 className="overview__heading">Hotel Las Palmas</h1>
       <div className="overview__stars">
-        <StarIcon clName="overview__icon-star" icName="star" />
-        <StarIcon clName="overview__icon-star" icName="star" />
-        <StarIcon clName="overview__icon-star" icName="star" />
-        <StarIcon clName="overview__icon-star" icName="star" />
-        <StarIcon clName="overview__icon-star" icName="star" />
+        <Icon clName="overview__icon-star" icName="star" />
+        <Icon clName="overview__icon-star" icName="star" />
+        <Icon clName="overview__icon-star" icName="star" />
+        <Icon clName="overview__icon-star" icName="star" />
+        <Icon clName="overview__icon-star" icName="star" />
       </div>
 
       <div className="overview__location">
-        <StarIcon clName="overview__icon-location" icName="location-pin" />
-        <Button clName="btn-inline">Albufeira, Portugal</Button>
+        <Icon clName="overview__icon-location" icName="location-pin" />
+        <Button btnType="text-country" btnText="Albufeira, Portugal" />
       </div>
 
       <div className="overview__rating">
@@ -128,11 +129,10 @@ const IndexPage = () => (
 
       <div className="user-reviews">
         {reviewList}
-        <Button clName="btn-inline">
-          Show all <span>&rarr;</span>
-        </Button>
+        <Button btnType="text" btnText="Show all" />
       </div>
     </div>
+    <CTA />
   </div>
 )
 
